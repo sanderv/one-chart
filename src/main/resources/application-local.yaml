@@ -1,0 +1,6 @@
+demoApp:
+  features:
+    alpha: true
+  messages:
+    messageOfTheDay: "Go outside and enjoy the sun!"
+    quote: "May all your threads be lightweight"

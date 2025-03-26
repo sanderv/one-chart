@@ -1,0 +1,7 @@
+apiVersion: v2
+name: one-chart
+description: One chart to rule them all
+
+type: application
+version: 0.1.0
+appVersion: "1.16.0"

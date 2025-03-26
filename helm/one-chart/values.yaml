@@ -1,0 +1,7 @@
+springConfig:
+  demoApp:
+    messages:
+      quote: I'm navigating here!
+      messageOfTheDay: Greeting from the Helm!
+    features:
+      alpha: true

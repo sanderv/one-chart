@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "one-chart.fullname" . }}
+  labels:
+    {{- include "one-chart.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "one-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "one-chart.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "sanderv/one-chart:latest"
+          imagePullPolicy: Always
+          env:
+            - name: SPRING_APPLICATION_JSON
+              value: {{ .Values.springConfig | toJson | quote }}
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP

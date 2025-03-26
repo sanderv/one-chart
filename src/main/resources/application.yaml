@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: helm-voxxed-days
+
+demoApp:
+  features:
+    alpha: false
+    beta: false
+  messages:
+    messageOfTheDay: "Today's a good day for coffee!"
