@@ -1,0 +1,20 @@
+# Local Spring Boot requests
+### GET to message of the day
+GET http://localhost:8080/messages/motd
+### Get to quote
+GET http://localhost:8080/messages/quote
+### Get to alpha feature (might be disabled)
+GET http://localhost:8080/alpha/awesomeResult
+### Get to beta feature (might be disabled)
+GET http://localhost:8080/beta/quiteStable
+
+
+# Kubernetes (k3d) requests
+### GET to message of the day
+GET http://localhost:8090/messages/motd
+### Get to quote
+GET http://localhost:8090/messages/quote
+### Get to alpha feature (might be disabled)
+GET http://localhost:8090/alpha/awesomeResult
+### Get to beta feature (might be disabled)
+GET http://localhost:8090/beta/quiteStable
