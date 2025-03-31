@@ -22,7 +22,7 @@ If you play around with the `application-local.yaml` you can enable either/both 
 - http://localhost:8080/beta/quiteStable
 
 # Setting up a local Kubernetes cluster
-You'll need docker, but I presume you have that running or now how to install it.
+You'll need docker, but I presume you have that running or know how to install it.
 
 [k3d](https://k3d.io) is a simple, lightweight Kubernetes cluster manager for local clusters.
 The simplest way to install it is through [Homebrew](https://brew.sh). 
